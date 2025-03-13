@@ -5,28 +5,28 @@ import { motion } from "framer-motion";
 export default function FAQSection() {
   const faqs = [
     {
-      question: "How does VistaVilla ensure property authenticity?",
-      answer: "Every listing undergoes rigorous verification including legal checks, physical inspections, and documentation review by our expert team."
+      question: "How do I list a property on this platform?",
+      answer: "To list a property, sign in to your account, navigate to the 'Add Property' section, fill in the details (price, location, images, etc.), and submit your listing. Once approved, it will be visible to potential buyers/renters."
     },
     {
-      question: "What makes your pricing strategy different?",
-      answer: "Our AI-powered valuation system considers 50+ market factors to provide fair, real-time pricing recommendations for both buyers and sellers."
+      question: " Is my payment secure on this platform?",
+      answer: "Yes! We use Razorpay for secure payment processing, ensuring end-to-end encryption and fraud protection for all transactions."
     },
     {
-      question: "How secure are my property documents?",
-      answer: "We use bank-grade encryption and blockchain technology to store all documents securely, with multi-factor authentication access."
+      question: "Can I schedule property visits before making a decision?",
+      answer: "Absolutely! You can request a property visit by clicking the 'Schedule a Visit' button on a listing. The owner/agent will confirm the date and time."
     },
     {
-      question: "Can I schedule virtual property tours?",
-      answer: "Yes, our platform offers 360° virtual tours with live agent guidance and AR furniture visualization for remote viewing."
+      question: " Do I need to create an account to browse listings?",
+      answer: "No, browsing is open to all users. However, to save properties, schedule visits, or make transactions, you’ll need to create a free account."
     },
     {
-      question: "What post-purchase support do you offer?",
-      answer: "Our concierge service assists with everything from interior design recommendations to utility setups and maintenance contracts."
+      question: "What types of properties can I find here?",
+      answer: "Our platform features residential homes, apartments, commercial properties, plots, and rental spaces across various locations."
     },
     {
-      question: "How do you handle legal verification?",
-      answer: "Our in-house legal team conducts complete title checks, approval verifications, and compliance audits for every transaction."
+      question: "How do I contact the property owner or agent?",
+      answer: "Each listing includes a 'Contact Owner/Agent' button. Once logged in, you can send messages directly or request a call back."
     }
   ];
 

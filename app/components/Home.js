@@ -51,7 +51,7 @@ function Navigation() {
           <div className="bg-purple-600/80 w-8 h-8 rounded-md flex items-center justify-center mr-2 transition-all duration-300 group-hover:bg-purple-500 group-hover:shadow-md group-hover:shadow-purple-500/30">
             <div className="bg-black w-4 h-4 rounded-sm"></div>
           </div>
-          <span className=" text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent transition-all duration-300 group-hover:from-pink-500 group-hover:to-purple-400">
+          <span className=" text-xl font-bold ">
             VistaVilla
           </span>
         </div>
