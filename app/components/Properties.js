@@ -59,7 +59,7 @@ export default function FeaturedPropertiesSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="mb-12 flex justify-between items-end"
         >
-          <div>
+          <div id="properties">
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-white bg-clip-text text-transparent">
               Featured Properties
             </h2>
