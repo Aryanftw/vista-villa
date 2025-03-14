@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FaLock, FaMoneyBillWave, FaHome, FaBolt, FaSearch, FaHandshake, FaChartLine, FaUserShield } from "react-icons/fa";
+import { Plus_Jakarta_Sans } from "next/font/google";
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export default function AboutPage() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className={`${jakarta.className} bg-black text-white min-h-screen`}>
       {/* Hero Section with Image */}
       <div className="relative overflow-hidden pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 relative z-10">

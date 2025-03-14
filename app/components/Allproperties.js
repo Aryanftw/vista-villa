@@ -107,7 +107,7 @@ export default function PropertiesListingSection() {
   }, [searchTerm, filters]);
 
   return (
-    <div className={`${jakarta.className}bg-black text-white py-16 relative`}>
+    <div className={`${jakarta.className} bg-black text-white py-16 relative`}>
       {/* Background effects */}
       <motion.div
         className="absolute top-1/3 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full filter blur-3xl opacity-30"
