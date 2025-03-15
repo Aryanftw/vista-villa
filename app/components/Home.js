@@ -13,6 +13,8 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "
 
 
 
+
+
 // Enhanced Feature card component with purple glassmorphism
 function FeatureCard({ icon, title, index }) {
   return (
@@ -282,7 +284,7 @@ function TestimonialsSection() {
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
 
       <motion.div
-        className="max-w-7xl mx-auto px-6 lg:px-16 relative z-10"
+        className="max-w-7xl mx-auto px-6 lg:px-16 relative"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -356,13 +358,11 @@ function TestimonialsSection() {
 export default function Homepage() {
   return (
     <main className={`${jakarta.className} bg-black min-h-screen`}>
-      
       <HeroSection />
       <FeaturesSection />
       <FeaturedPropertiesSection/>
       <TestimonialsSection />
       <FAQSection/>
-      
     </main>
   );
 }

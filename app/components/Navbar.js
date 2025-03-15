@@ -93,7 +93,7 @@ export default function Navigation() {
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
-            <Link href="/post-property" className="text-white px-4 py-2 rounded-md transition-all duration-300 shadow-md shadow-purple-500/20 bg-gradient-to-br from-purple-600/80 to-purple-800/80 backdrop-blur-md hover:shadow-lg hover:shadow-purple-500/30 hover:from-purple-500/80 hover:to-purple-700/80">
+            <Link href="/postproperty" className="text-white px-4 py-2 rounded-md transition-all duration-300 shadow-md shadow-purple-500/20 bg-gradient-to-br from-purple-600/80 to-purple-800/80 backdrop-blur-md hover:shadow-lg hover:shadow-purple-500/30 hover:from-purple-500/80 hover:to-purple-700/80">
               Post Property
             </Link>
           </motion.div>
