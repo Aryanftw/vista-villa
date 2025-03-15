@@ -36,7 +36,7 @@ export default function Navigation() {
 
   return (
     <motion.nav
-      className={`bg-black/70 backdrop-blur-xl border-b py-4 px-6 lg:px-16 sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'border-purple-500/20 shadow-lg shadow-purple-500/10' : 'border-transparent'}`}
+      className={`${jakarta.className} bg-black/70 backdrop-blur-xl border-b py-4 px-6 lg:px-16 sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'border-purple-500/20 shadow-lg shadow-purple-500/10' : 'border-transparent'}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
