@@ -127,7 +127,7 @@ export default function FeaturedPropertiesSection() {
       bhk: "3 BHK",
       price: "₹4.2 Cr",
       description: "Modern 3BHK apartment with panoramic city views and premium amenities",
-      image: "/property1.jpg"
+      image: "/luxury-sky-villa.jpg"
     },
     {
       id: 2,
@@ -136,7 +136,7 @@ export default function FeaturedPropertiesSection() {
       bhk: "4 BHK",
       price: "₹3.8 Cr",
       description: "Spacious villa nestled in the hills with private garden and pool",
-      image: "/property2.jpg"
+      image: "/seren-hillside-villa.jpg"
     },
     {
       id: 3,
@@ -145,7 +145,7 @@ export default function FeaturedPropertiesSection() {
       bhk: "1 BHK",
       price: "₹1.2 Cr",
       description: "Contemporary studio loft in prime location with smart home features",
-      image: "/property3.jpg"
+      image: "/urban-studio-loft.jpg"
     }
   ];
 

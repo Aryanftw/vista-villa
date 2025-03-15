@@ -243,8 +243,42 @@ function FeaturesSection() {
 
 // Testimonials section
 function TestimonialsSection() {
+  const testimonials = [
+    {
+      name: "Sarah Johnson",
+      role: "Homeowner",
+      quote: "VistaVilla helped me find my dream home in just two weeks. Their attention to my specific needs was impressive."
+    },
+    {
+      name: "Michael Chen",
+      role: "Property Investor",
+      quote: "As an investor, I appreciate their market insights and property valuation. Their team truly understands real estate fundamentals."
+    },
+    {
+      name: "Priya Sharma",
+      role: "First-time Buyer",
+      quote: "The team guided me through every step of my first home purchase. Their patience and expertise made all the difference."
+    },
+    // Duplicate array for seamless loop
+    {
+      name: "Sarah Johnson",
+      role: "Homeowner",
+      quote: "VistaVilla helped me find my dream home in just two weeks. Their attention to my specific needs was impressive."
+    },
+    {
+      name: "Michael Chen",
+      role: "Property Investor",
+      quote: "As an investor, I appreciate their market insights and property valuation. Their team truly understands real estate fundamentals."
+    },
+    {
+      name: "Priya Sharma",
+      role: "First-time Buyer",
+      quote: "The team guided me through every step of my first home purchase. Their patience and expertise made all the difference."
+    }
+  ];
+
   return (
-    <div className="bg-black text-white py-16 relative">
+    <div className="bg-black text-white py-16 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
 
       <motion.div
@@ -265,58 +299,54 @@ function TestimonialsSection() {
           <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-400 mx-auto"></div>
         </motion.div>
 
-        <motion.button
-          className="px-6 py-3 bg-white/5 backdrop-blur-xl border border-purple-500/20 text-white rounded-lg hover:bg-purple-900/20 items-end transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
-          whileHover={{ y: -4 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          View all
-        </motion.button>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              name: "Sarah Johnson",
-              role: "Homeowner",
-              quote: "VistaVilla helped me find my dream home in just two weeks. Their attention to my specific needs was impressive."
-            },
-            {
-              name: "Michael Chen",
-              role: "Property Investor",
-              quote: "As an investor, I appreciate their market insights and property valuation. Their team truly understands real estate fundamentals."
-            },
-            {
-              name: "Priya Sharma",
-              role: "First-time Buyer",
-              quote: "The team guided me through every step of my first home purchase. Their patience and expertise made all the difference."
-            }
-          ].map((testimonial, index) => (
-            <motion.div
-              key={index}
-              className="bg-black/40 backdrop-blur-xl p-6 rounded-xl border border-purple-500/20 relative transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <div className="mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-purple-400/70">
-                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
-                  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
-                </svg>
+        <div className="relative overflow-hidden py-8">
+          <motion.div 
+            className="flex"
+            animate={{
+              x: ["0%", "-50%"],
+            }}
+            transition={{
+              duration: 30,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="min-w-[90vw] md:min-w-[50vw] lg:min-w-[30vw] pr-6"
+              >
+                <motion.div
+                  className="bg-black/40 backdrop-blur-xl p-6 rounded-xl border border-purple-500/20 relative h-full"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                >
+                  <div className="mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-purple-400/70">
+                      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                      <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-gray-300 mb-6 italic">{testimonial.quote}</p>
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full bg-purple-600/30 flex items-center justify-center text-white font-medium">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-white font-medium">{testimonial.name}</p>
+                      <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-              <p className="text-gray-300 mb-6 italic">{testimonial.quote}</p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-purple-600/30 flex items-center justify-center text-white font-medium">
-                  {testimonial.name.charAt(0)}
-                </div>
-                <div className="ml-3">
-                  <p className="text-white font-medium">{testimonial.name}</p>
-                  <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
+          
+          {/* Gradient overlays */}
+          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black to-transparent z-20"></div>
+          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black to-transparent z-20"></div>
         </div>
       </motion.div>
     </div>

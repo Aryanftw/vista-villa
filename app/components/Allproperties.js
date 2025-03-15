@@ -143,7 +143,7 @@ export default function PropertiesListingSection() {
       bhk: "3",
       price: "₹4.2 Cr",
       description: "Modern 3BHK apartment with panoramic city views and premium amenities",
-      image: "/property1.jpg",
+      image: "/luxury-sky-villa.jpg",
       type: "apartment",
       status: "ready"
     },
@@ -154,7 +154,7 @@ export default function PropertiesListingSection() {
       bhk: "4",
       price: "₹3.8 Cr",
       description: "Spacious villa nestled in the hills with private garden and pool",
-      image: "/property2.jpg",
+      image: "/seren-hillside-villa.jpg",
       type: "villa",
       status: "ready"
     },
@@ -165,7 +165,7 @@ export default function PropertiesListingSection() {
       bhk: "1",
       price: "₹1.2 Cr",
       description: "Contemporary studio loft in prime location with smart home features",
-      image: "/property3.jpg",
+      image: "/urban-studio-loft.jpg",
       type: "penthouse",
       status: "under-construction"
     },
@@ -176,7 +176,7 @@ export default function PropertiesListingSection() {
       bhk: "5",
       price: "₹8.5 Cr",
       description: "Luxurious 5BHK estate with private beach access",
-      image: "/property4.jpg",
+      image: "/golden-valley-estate.jpg",
       type: "villa",
       status: "ready"
     },
@@ -187,7 +187,7 @@ export default function PropertiesListingSection() {
       bhk: "3",
       price: "₹5.5 Cr",
       description: "Luxurious penthouse with stunning ocean views",
-      image: "/property5.jpg",
+      image: "/ocean-view-penthouse.jpg",
       type: "penthouse",
       status: "ready"
     },
@@ -198,7 +198,7 @@ export default function PropertiesListingSection() {
       bhk: "2",
       price: "₹2.2 Cr",
       description: "Eco-friendly apartment with lush green surroundings",
-      image: "/property6.jpg",
+      image: "/green-valley-apartment.jpeg",
       type: "apartment",
       status: "under-construction"
     }
