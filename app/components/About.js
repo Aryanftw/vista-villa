@@ -108,18 +108,20 @@ export default function AboutPage() {
               }
             ].map((feature, index) => (
               <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0 }
-                }}
-                className="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 hover:border-purple-400/50 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105"
-                whileHover={{ y: -10 }}
-              >
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-400/90">{feature.desc}</p>
-              </motion.div>
+              key={index}
+              className="bg-black/40 backdrop-blur-xl p-4 rounded-xl border border-purple-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:bg-purple-900/10 group"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 + (index * 0.1) }}
+            >
+              <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent group-hover:from-pink-300 group-hover:to-purple-400 transition-all duration-300">
+                {feature.icon}
+              </div>
+              <h3 className="text-gray-400/80 text-sm mt-1 group-hover:text-gray-300/90 transition-colors duration-300">{feature.title}</h3>
+              <p>
+                {feature.desc}
+              </p>
+            </motion.div>
             ))}
           </motion.div>
         </div>
